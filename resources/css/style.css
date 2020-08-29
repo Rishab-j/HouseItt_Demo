@@ -497,6 +497,13 @@ h4{
         align-items: center;
     }
 
+    .heading-image {
+        margin-top: 10px;
+        vertical-align: middle;
+        width: 800px;
+    }
+    
+
     .btn{
         padding: 13px 13px;
         margin-left: 35px;
