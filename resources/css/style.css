@@ -27,6 +27,14 @@ h2{
     margin-bottom: 40px;
 }
 
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: #ff4568;
+    content: " ";
+    width: 150px;
+}
+
 h3{
     font-size: 1.5rem;
     margin-left: 200px;
