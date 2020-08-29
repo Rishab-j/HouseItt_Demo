@@ -59,7 +59,7 @@ h4{
 .heading-image {
     margin-top: 8px;
     vertical-align: middle;
-    width: 50%;
+    width: 700px;
 }
 
 .heading-image img{
@@ -232,4 +232,18 @@ h4{
     background-color: #ff4568;
     border-radius: 200px;
     color: #fff;
+}
+
+.testimonials-title{
+    margin-top: 50px;
+    margin-bottom: 7px;
+}
+
+.stories{
+    width:500px;
+    margin: 0 auto;
+}
+
+.story-image img{
+    width: 100%;
 }

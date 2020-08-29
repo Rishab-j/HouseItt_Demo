@@ -7,6 +7,8 @@
     <title>HouseItt</title>
 
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/slick-1.8.1/slick/slick-theme.css"/>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 
@@ -174,7 +176,51 @@
 
         </div>
 
+        <div class="testimonials">
+
+            <h2 class="testimonials-title">LISTEN TO THEIR STORIES</h2>
+            <h3>SNEAK PEEK TO OUR LIVES AT HOUSEITT</h3>
+
+            <div class="stories">
+                <div>
+                    <div class="story-image">
+                        <img src="./resources/images/story1.jpg" alt="story1">
+                    </div>
+                </div>
+                <div>
+                    <div class="story-image">
+                        <img src="./resources/images/story2.jpg" alt="story1">
+                    </div>
+                </div>
+                <div>
+                    <div class="story-image">
+                        <img src="./resources/images/story3.jpg" alt="story1">
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+
+
     </main>
+
+
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/slick-1.8.1/slick/slick.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.stories').slick({
+                dots: true,
+                arrows: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+        });
+    </script>
+
 
 </body>
 
