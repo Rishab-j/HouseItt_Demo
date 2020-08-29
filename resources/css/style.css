@@ -476,7 +476,7 @@ h4{
     }
 
     h3{
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         margin-left: 35px;
         margin-bottom: 5rem;
     }
@@ -502,6 +502,7 @@ h4{
         vertical-align: middle;
         width: 800px;
     }
+    
     
 
     .btn{
@@ -537,7 +538,8 @@ h4{
     }
 
     .value-name{
-        margin-left: 80px;
+        font-size: 1.2;
+        margin-left: 70px;
         margin-top: 20px; 
     }
 
