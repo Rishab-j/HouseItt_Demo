@@ -486,6 +486,17 @@ h4{
         margin-left: 100px;
     }
 
+
+    .heading{
+        margin-bottom: 8rem;
+    }
+
+    .heading-text {
+        padding: 0 10px;
+        margin-right: 10px;
+        align-items: center;
+    }
+
     .heading-image {
         width: 600px;
     }
