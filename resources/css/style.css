@@ -580,6 +580,7 @@ section{
     }
 
     .openings-grid{
+        margin: 30px auto;
         max-width: 300px;
         gap: 30px;
     }
