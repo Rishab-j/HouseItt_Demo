@@ -15,7 +15,7 @@ html{
 }
 
 h1{
-    font-size: 6rem;
+    font-size: 5.5rem;
     margin-right: 40px;
     margin-bottom: 35px;
 }
@@ -38,13 +38,17 @@ h2:after{
 h3{
     font-size: 1.5rem;
     margin-left: 200px;
-    margin-bottom: 5rem;
+    margin-bottom: 20px;
 }
 
 h4{
     font-size: 2rem;
     font-weight: 400;
     margin-top: 20px;
+}
+
+section{
+    margin-bottom: 80px;
 }
 
 /* ---------- HEADING ------------ */
@@ -59,7 +63,6 @@ h4{
 
 .heading-text {
     padding: 0 10px;
-    margin-right: 20px;
     align-items: center;
 }
   
@@ -72,18 +75,19 @@ h4{
 
 .heading-image img{
     max-width: 100%;
+    border-radius: 10px;
 }
 
 .btn{
     padding: 20px 20px;
-    margin-left: 50px;
+    margin-left: 130px;
     margin-top: 20px;
     justify-content: center;
     font-weight: 600;
     font-size: medium;
     text-decoration: none;
     background-color: #ff4568;
-    border-radius: 200px;
+    border-radius: 100px;
     color: #fff;
     transition: background-color 0.3s;
 }
@@ -93,6 +97,11 @@ h4{
 }
 
 /* ---------- REASONS ------------ */
+
+
+.reasons-list__title{
+    margin-left: 100px;
+}
 
 .reasons-list{
     margin: 0 auto;
@@ -106,22 +115,23 @@ h4{
 .reasons-list__image{
     width: 100%;
     display: block;
-    border-radius: 50px;
+    border-radius: 10px;
 }
 
 .reasons-list__item img{
     max-width: 100%;
 }
 
-.reasons-list__title{
-    margin-left: 100px;
-}
 
 /* ---------- VALUES ------------ */
 
 .values-title{
-    margin-top: 80px;
+    /* margin-top: 80px; */
     margin-bottom: 7px;
+}
+
+.values-subtitle{
+    margin-bottom: 50px;
 }
 
 .values-grid{
@@ -136,7 +146,7 @@ h4{
 .values-grid__image{
     width: 100%;
     display: block;
-    border-radius: 50px;
+    border-radius: 10px;
 }
 
 .value-name{
@@ -147,7 +157,7 @@ h4{
 /* ---------- OPENINGS ------------ */
 
 .openings-title{
-    margin-top: 80px;
+    /* margin-top: 80px; */
     margin-bottom: 10px;
 }
 
@@ -161,10 +171,12 @@ h4{
 }
 
 .opening{
+    height: 280px;
     display: flex;
     margin-bottom: 50px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
+    border-radius: 10px;
+    border: 1px solid #ff4568;
 }
 
 .opening-content__title{
@@ -177,14 +189,15 @@ h4{
     line-height: 1.5;
     font-size: 1.5rem;
     padding: 15px 0px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 .opening-image {
     margin-top: 20px;
-    margin-left: 40px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     vertical-align: middle;
     width: 100%;
 }
@@ -200,9 +213,9 @@ h4{
     font-size: 1.5rem;
     text-decoration: none;
     background-color: #ff4568;
-    border-radius: 200px;
+    border-radius: 100px;
     color: #fff;
-    margin-left: 200px;
+    margin-left: 250px;
     margin-bottom: 20px;
 }
 
@@ -210,8 +223,12 @@ h4{
 /* ---------- BLOGS ------------ */
 
 .blogs-title{
-    margin-top: 80px;
+    /* margin-top: 80px; */
     margin-bottom: 10px;
+}
+
+.blogs-subtitle{
+    margin-bottom: 50px;
 }
 
 .blogs-grid{
@@ -224,16 +241,19 @@ h4{
 }
 
 .blog{
+    height: 380px;
     margin-bottom: 50px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
+    border: 1px solid #ff4568;
 }
 
 .blog-image {
-    margin-top: 60px;
+    margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 10px;
     vertical-align: middle;
-    width: 100%;
+    width: 280px;
 }
 
 .blog-image img{
@@ -241,7 +261,10 @@ h4{
 }
 
 .blog-content__title{
-    margin-left: 50px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-weight: 400;
 }
 
 .blog-content__more{
@@ -259,18 +282,22 @@ h4{
 /* ---------- TESTIMONIALS ------------ */
 
 .testimonials-title{
-    margin-top: 80px;
+    /* margin-top: 80px; */
     margin-bottom: 7px;
 }
 
+.testimonials-subtitle{
+    margin-bottom: 50px;
+}
+
 .stories{
-    width:500px;
+    width:600px;
     margin: 0 auto;
 }
 
 .story-image img{
-    border-radius: 40px;
-    width: 100%;
+    border-radius: 20px;
+    max-width: 100%;
 }
 
 
@@ -285,7 +312,6 @@ h4{
     h3{
         font-size: 1.5rem;
         margin-left: 50px;
-        margin-bottom: 5rem;
     }
 
     .reasons-list{
@@ -309,7 +335,6 @@ h4{
     h3{
         font-size: 1.5rem;
         margin-left: 85px;
-        margin-bottom: 5rem;
     }
 
     h4{
@@ -386,7 +411,6 @@ h4{
     h3{
         font-size: 1.5rem;
         margin-left: 60px;
-        margin-bottom: 5rem;
     }
 
     h4{
@@ -470,6 +494,11 @@ h4{
 
 
 @media only screen and (max-width: 480px) {
+    
+    section{
+        margin-bottom: 40px;
+    }
+
     h1{
         font-size: 3.2rem;
         margin-top: 20px;
@@ -486,7 +515,7 @@ h4{
     h3{
         font-size: 1.4rem;
         margin-left: 35px;
-        margin-bottom: 5rem;
+        margin-bottom: 20px;
     }
 
     h4{
@@ -496,6 +525,7 @@ h4{
 
 
     .heading{
+        flex-direction: column-reverse;
         margin-bottom: 8rem;
     }
 
@@ -506,21 +536,19 @@ h4{
     }
 
     .heading-image {
-        margin-top: 10px;
+        margin-top: 20px;
         vertical-align: middle;
-        width: 800px;
+        width: 350px;
     }
     
-    
-
     .btn{
         padding: 13px 13px;
-        margin-left: 35px;
-        font-size: 1rem;
+        margin-left: 70px;
+        font-size: 1.5rem;
     }
 
     .reasons-list{
-        max-width: 280px;
+        max-width: 250px;
         grid-template-columns: repeat(1,1fr);
         gap: 20px;
         align-items: center;
@@ -536,9 +564,9 @@ h4{
     }
 
     .values-grid{
-        max-width: 450px;
-        grid-template-columns: repeat(2,1fr);
-        gap : 20px;
+        max-width: 250px;
+        grid-template-columns: repeat(1,1fr);
+        gap : 5px;
     }
 
     .values-grid__image{
@@ -547,37 +575,40 @@ h4{
 
     .value-name{
         font-size: 1.2;
-        margin-left: 70px;
+        margin-left: 110px;
         margin-top: 20px; 
     }
 
-    .openings-title{
-        margin-top: 60px;
+    .openings-grid{
+        max-width: 300px;
+        gap: 30px;
     }
 
-    .openings-grid{
-        max-width: 400px;
-        gap: 30px;
+    .opening{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 430px;
+        margin-bottom: 0px;
     }
 
     .opening-content__title{
         font-size: 1.8rem;
+        margin-bottom: 10px;
     }
 
     .opening-content__description{
         line-height: 1.2;
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding: 5px 0px;
-        margin-bottom: 25px;
     }
 
     .opening-image{
-        margin-top: 80px;
-        margin-left: 30px;
+        margin-top: 0px;
+        width: 280px;
     }
 
     .opening-content__apply{
-        margin-left: 100px;
+        margin-left: 110px;
         font-size: 1.2rem;
         font-weight: 500;
     }
@@ -593,11 +624,13 @@ h4{
     }
 
     .blog{
+        height: 350px;
         margin-bottom: 30px;
     }
 
     .blog-content__title{
-        margin-left: 20px;
+        margin-bottom: 40px;
+
     }
 
     .blog-content__more{
