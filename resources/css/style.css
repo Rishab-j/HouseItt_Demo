@@ -14,16 +14,19 @@ html{
     overflow-x: hidden;                  
 }
 
+main,body{
+    margin: 0 auto;
+}
+
 h1{
-    font-size: 5.5rem;
-    margin-right: 40px;
-    margin-bottom: 35px;
+    font-size: 5rem;
+    text-align: center;
 }
 
 h2{
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 600;
-    margin-left: 200px;
+    margin-left: 180px;
     margin-bottom: 40px;
 }
 
@@ -37,40 +40,46 @@ h2:after{
 
 h3{
     font-size: 1.5rem;
-    margin-left: 200px;
+    margin-left: 180px;
     margin-bottom: 20px;
 }
 
 h4{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;;
 }
 
 section{
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 /* ---------- HEADING ------------ */
 
 .heading{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1.75fr;
+    margin-top: 40px;
+    margin-right: 120px;
+    margin-bottom: 80px;
+
 }
 
 .heading-text {
-    padding: 0 10px;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
 }
-  
 
-.heading-image {
-    margin-top: 10px;
-    vertical-align: middle;
-    width: 700px;
+.heading-title{
+    margin-left: 100px;
+}
+
+.heading-button{
+    text-align: center;
+    margin-left: 100px;
 }
 
 .heading-image img{
@@ -80,41 +89,25 @@ section{
 
 .btn{
     padding: 20px 20px;
-    margin-left: 130px;
-    margin-top: 20px;
-    justify-content: center;
+    text-align: center;
     font-weight: 600;
     font-size: medium;
     text-decoration: none;
     background-color: #ff4568;
-    border-radius: 100px;
+    border-radius: 10px;
     color: #fff;
-    transition: background-color 0.3s;
-}
-
-.btn:hover{
-    background-color: #F5002D;
 }
 
 /* ---------- REASONS ------------ */
 
-
-.reasons-list__title{
-    margin-left: 100px;
-}
-
 .reasons-list{
-    margin: 0 auto;
-    max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap : 50px;
-    align-items: center;
+    margin-left: 180px;
 }
 
 .reasons-list__image{
-    width: 100%;
-    display: block;
+    width: 280px;
     border-radius: 10px;
 }
 
@@ -126,7 +119,6 @@ section{
 /* ---------- VALUES ------------ */
 
 .values-title{
-    /* margin-top: 80px; */
     margin-bottom: 7px;
 }
 
@@ -135,95 +127,95 @@ section{
 }
 
 .values-grid{
-    margin: 0 auto;
-    max-width: 1000px;
+    margin-left: 180px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap : 50px;
-    align-items: center;
+    grid-row-gap: 50px;
+}
+
+.value{
+    display: flex;
+    flex-direction: column;
 }
 
 .values-grid__image{
-    width: 100%;
-    display: block;
+    width: 280px;
     border-radius: 10px;
 }
 
-.value-name{
-    margin-left: 125px;
-    margin-top: 20px; 
+.values-grid__image img{
+    max-width: 100%;
 }
+
 
 /* ---------- OPENINGS ------------ */
 
 .openings-title{
-    /* margin-top: 80px; */
     margin-bottom: 10px;
 }
 
 .openings-grid{
-    margin: 50px auto;
+    margin: 40px auto;
     max-width: 1000px;
     display: grid;
     grid-template-rows: repeat(2,1fr);
-    gap : 50px;
     align-items: center;
 }
 
 .opening{
-    height: 280px;
-    display: flex;
-    margin-bottom: 50px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1.75fr 1fr;
+
+    margin-bottom: 40px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    border: 1px solid #ff4568;
+}
+
+.opening-content{
+    display: flex;
+    flex-direction: column;
 }
 
 .opening-content__title{
-    margin-left: 20px;
+    margin-left: 30px;
     margin-top: 20px;
-    font-size: 3rem;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
 }
 
 .opening-content__description{
     line-height: 1.5;
     font-size: 1.5rem;
-    padding: 15px 0px;
-    margin-bottom: 10px;
-    margin-left: 20px;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+    margin-left: 30px;
     margin-right: 20px;
 }
 
 .opening-image {
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    vertical-align: middle;
     width: 100%;
 }
 
 .opening-image img{
     max-width: 100%;
+    border-radius: 10px;
 }
 
 .opening-content__apply{
     padding: 10px 20px;
-    justify-content: center;
     font-weight: 600;
     font-size: 1.5rem;
     text-decoration: none;
     background-color: #ff4568;
-    border-radius: 100px;
+    border-radius: 10px;
     color: #fff;
-    margin-left: 250px;
-    margin-bottom: 20px;
+    margin-left: 30px;
 }
 
 
 /* ---------- BLOGS ------------ */
 
 .blogs-title{
-    /* margin-top: 80px; */
     margin-bottom: 10px;
 }
 
@@ -282,7 +274,6 @@ section{
 /* ---------- TESTIMONIALS ------------ */
 
 .testimonials-title{
-    /* margin-top: 80px; */
     margin-bottom: 7px;
 }
 
@@ -306,29 +297,34 @@ section{
 @media only screen and (max-width: 1200px) {
     
     h2{
-        margin-left: 50px;
+        margin-left: 100px;
     }
 
     h3{
         font-size: 1.5rem;
-        margin-left: 50px;
+        margin-left: 100px;
     }
 
     .reasons-list{
-        max-width: 900px;
+        max-width: 1000px;
+        margin-left: 100px;
+        gap: 70px;
+    }
+
+    .values-grid{
+        margin-left: 100px;
+        
     }
 
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1024px) {
     h1{
-        font-size: 4rem;
-        margin-left: 50px;
+        font-size: 3.5rem;
     }
 
     h2{
-        font-size: 2.5rem;
-
+        font-size: 2.3rem;
         margin-left: 85px;
     }
 
@@ -341,47 +337,53 @@ section{
         font-size: 1.5rem;
     }
 
-    .heading-image {
-        width: 600px;
-    }
-
     .btn{
-        padding: 15px 15px;
-        margin-left: 60px;
-        font-size: 1.5rem;
+        padding: 14px 14px;
+        font-size: 1.4rem;
     }
 
     .reasons-list{
-        max-width: 750px;
-    }
-
-    .reasons-list__title{
-        margin-left: 50px;
+        max-width: 850px;
+        margin-left: 85px;
     }
 
     .values-grid{
-        max-width: 800px;
+        max-width: 850px;
+        margin-left: 85px;
+        grid-row-gap: 40px;
+        grid-column-gap: 40px;
     }
 
     .values-grid__image{
-        width: 100%;
+        width: 260px;
     }
 
     .value-name{
-        margin-left: 100px;
         margin-top: 20px; 
     }
 
     .openings-grid{
-        max-width: 700px;
+        max-width: 850px;
     }
 
     .opening-content__title{
-        font-size: 2.3rem;
+        font-size: 2.2rem;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .opening-content__description{
+        line-height: 1.4;
+        font-size: 1.4rem;
+        padding: 8px 0px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+        margin-right: 20px;
     }
 
     .opening-content__apply{
-        margin-left: 180px;
+        padding: 10px 13px;
+        
     }
 
     .blogs-grid{
@@ -397,14 +399,14 @@ section{
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     h1{
-        font-size: 3.5rem;
-        margin-left: 50px;
+        font-size: 2.5rem;
+        margin-right: 50px;
     }
 
     h2{
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin-left: 60px;
     }
 
@@ -413,65 +415,86 @@ section{
         margin-left: 60px;
     }
 
-    h4{
-        font-size: 1.5rem;
-        margin-left: 50px;
+
+    .heading{
+        margin-right: 0px;
     }
 
-    .heading-image {
-        width: 600px;
+    .heading-text {
+        gap: 20px;
+    }
+
+    .heading-button{
+        margin-left: 0px;
+        margin-right: 20px; 
+    }
+
+    .heading-title{
+        margin-left: 80px;
     }
 
     .btn{
-        padding: 15px 15px;
-        margin-left: 60px;
-        font-size: 1.3rem;
+        padding: 12px 12px;
+        margin-left: 50px;
+        font-size: 1.2rem;
     }
 
     .reasons-list{
         max-width: 650px;
         gap: 30px;
+        margin-left: 60px;
     }
 
     .values-grid{
-        max-width: 700px;
+        max-width: 650px;
         gap: 25px;
+        margin-left: 60px;
     }
 
     .values-grid__image{
         width: 100%;
     }
 
-    .value-name{
-        margin-left: 80px;
-        margin-top: 20px; 
-    }
-
     .openings-grid{
-        max-width: 550px;
-        gap: 30px;
-    }
-
-    .opening-content__title{
-        font-size: 2.3rem;
+        max-width: 700px;
     }
 
     .opening-content__description{
         line-height: 1.3;
         font-size: 1.3rem;
         padding: 10px 0px;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
     }
 
-    .opening-image{
-        margin-top: 80px;
-        margin-left: 30px;
+    .opening-content{
+        gap: 10px;
+    }
+
+    .opening-content__title{
+        margin-left: 20px;
+        margin-top: 15px;
+        font-size: 2rem;
+    }
+
+    .opening{
+        grid-template-columns: 1.20fr 1fr;
+    }
+
+    
+
+    .opening-content__description{
+        line-height: 1.3;
+        font-size: 1.3rem;
+        padding: 5px 0px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .opening-content__apply{
-        margin-left: 140px;
         font-size: 1.4rem;
         font-weight: 500;
+        margin-left: 20px;
     }
 
     .blogs-grid{
@@ -501,21 +524,29 @@ section{
 
     h1{
         font-size: 3.2rem;
-        margin-top: 20px;
-        margin-left: 25px;
-        margin-right: 25px;
-        margin-bottom: 25px;
     }
 
     h2{
         font-size: 2.7rem;
-        margin-left: 35px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+    h2:after{
+        display: block;
+        height: 2px;
+        background-color: #ff4568;
+        content: " ";
+        width: 100px;
+        margin: 0 auto;
     }
 
     h3{
         font-size: 1.4rem;
-        margin-left: 35px;
+        margin-left: 0px;
         margin-bottom: 20px;
+        text-align: center;
     }
 
     h4{
@@ -525,21 +556,29 @@ section{
 
 
     .heading{
+        display: flex;
         flex-direction: column-reverse;
-        margin-bottom: 8rem;
     }
 
     .heading-text {
-        padding: 0 10px;
-        margin-right: 10px;
+        margin: 0 auto;
         align-items: center;
     }
 
-    .heading-image {
+    .heading-title{
         margin-top: 20px;
-        vertical-align: middle;
-        width: 350px;
+        margin-left: 50px;
     }
+
+    .heading-image {
+        margin: 0 auto;
+        width: 400px;
+    }
+
+    .heading-button {
+        margin-right: 70px;
+    }
+    
     
     .btn{
         padding: 13px 13px;
@@ -547,11 +586,16 @@ section{
         font-size: 1.5rem;
     }
 
+    .reasons{
+        margin: 0 auto;
+    }
+
     .reasons-list{
         max-width: 250px;
         grid-template-columns: repeat(1,1fr);
         gap: 20px;
-        align-items: center;
+        justify-content: center;
+        margin: 20px auto;
     }
     
     .reasons-list__title{
@@ -566,7 +610,8 @@ section{
     .values-grid{
         max-width: 250px;
         grid-template-columns: repeat(1,1fr);
-        gap : 5px;
+        gap : 10px;
+        margin: 20px auto;
     }
 
     .values-grid__image{
@@ -580,7 +625,7 @@ section{
     }
 
     .openings-grid{
-        margin-left: 40px;
+        margin : 20px auto;
         max-width: 300px;
         gap: 30px;
     }
@@ -588,24 +633,26 @@ section{
     .opening{
         display: flex;
         flex-direction: column-reverse;
-        height: 430px;
         margin-bottom: 0px;
     }
 
     .opening-content__title{
         font-size: 1.8rem;
-        margin-bottom: 10px;
+        text-align: center;
     }
 
     .opening-content__description{
         line-height: 1.2;
         font-size: 1.2rem;
         padding: 5px 0px;
+        margin-bottom: 5px;
+        margin-left: 0px;
+        margin-right: 0px;
+        text-align: center;
     }
 
     .opening-image{
         margin-top: 0px;
-        width: 280px;
     }
 
     .opening-content__apply{
